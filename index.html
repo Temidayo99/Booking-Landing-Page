@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/af2b470f3c.js" crossorigin="anonymous"></script>
+    <title>Vancouver's Best Home Cleaners</title>
+</head>
+<body>
+    <main>
+        <nav class="nav-container">
+            <a href="#" class="link-pro">Pro Cleaners</a>
+            <div class="nav-right">
+                <a href="#" class="phone-link">Phone: 1-800-222-3030</a>
+            </div>
+            
+        </nav>
+
+        <header class="header">
+            <div class="header-content">
+                <div class="content-div">
+                <h2>Vancouver's Best
+                    Home Cleaners</h2>
+                <p> Pro Cleaning is Vancouver's best cleaning service. For the 
+                    quality maid service Vancouver relies on, book one of our
+                    experienced, background-checked professionals to have your
+                    home clean in no time.
+                </p>
+            </div>
+            </div>
+
+            <div class="header-form">
+                <div class="form-div">
+                <h3>Request Info & Booking</h3>
+                    <p>Fill this form and we'll contact you as soon as we can</p>
+                <form action="" onsubmit="submitForm()" name="SignUpForm" id="signupform">
+                    <input type="text" name="fullName" id="fullName" placeholder="Your Name" required>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    <input type="number" name="phoneNo" id="phoneNo" placeholder="Your Phone" required>
+                    <input type="submit" value="Request Info & Booking" class="submit">
+                </form>
+            </div>
+            </div>
+        </header>
+
+        <section class="services">
+            <ul>
+                <li>
+                    <i class="fa fa-user icon"  style="font-size:36px;color: #14c9cc"></i>
+                    <h4>Trusted Professionals</h4>
+                    <p> Our professionals are experienced,
+                        friendly, and background-checked.</p>
+                </li>
+                <li>
+                    <i class="far fa-calendar-alt icon" style="font-size:36px;color:#14c9cc"></i>
+                    <h4>Available Everyday</h4>
+                    <p> We're available to serve you 7 days per
+                        week. We'll work around your schedule.</p>
+                </li>
+                <li>
+                    <i class="fa fa-dollar icon" style="font-size:36px;color:#14c9cc"></i>
+                    <h4>100% Money-Back Guarantee</h4>
+                    <p> If you're not satisfied, we'll refund all of 
+                        your money. It's as simple as that.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="review">
+            <div class="review-div">
+            <h2>What our Clients Say</h2>
+            <ul>
+                <li>
+                    <img src="images/woman22.PNG" alt="icon" class="reviewImg">
+                    <p>Paulo Parra</p>
+                    <hr>
+                    <p class="text2">The team was fast and friendly - honestly my
+                        house hasn't been this clean in years!
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </li>
+                <li>
+                    <img src="images/woman11.PNG" alt="icon" class="reviewImg">
+                    <p>Ana Carolina</p>
+                    <hr>
+                    <p class="text2">It feels so great walking in to a fresh, clean
+                        apartment every day. These guys make my
+                        place spotless!
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </li>
+            </ul>
+        </div>
+        </section>
+
+        <footer>
+            <p>&#169 Copyright. All Rights Reserved.</p>
+        </footer>
+    </main>
+</body>
+
+<script type="text/javascript">
+    function submitForm() {
+        fullname = document.getElementById("fullName").value;
+        email = document.getElementById("email").value;
+        phoneNo = document.getElementById("phoneNo").value;
+
+        var newLine = "\r\n"
+        var message  = "Your details are as follows: ";
+        message += newLine;
+        message += "Name: " + fullname;
+        message += newLine;
+        message += "Email: " + email;
+        message += newLine;
+        message += "Phone Number: " + phoneNo;
+
+        alert(message);
+    }
+</script>
+</html>

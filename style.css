@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+li {
+    list-style-type: none;
+}
+nav{
+    padding: 20px 200px;
+}
+.nav-container a{
+    float: left;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+.nav-right{
+    float: right;
+}
+.header{
+    background-image: url("images/cleaning4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    padding: 50px;
+}
+.header-content{
+    white-space: pre-line;
+    width: 60%;
+    float: left;
+    color: white;
+}
+.content-div{
+    padding-left: 200px;
+}
+.content-div p{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+}
+.content-div h2{
+    letter-spacing: 1px;
+}
+.header-form{
+    width: 40%;
+    float: left;
+    border-radius: 5px;
+}
+.form-div{
+    width: 50%;
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px 0;
+}
+.header-form h3, .header-form p{
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+.header-form p{
+    font-size: 8.5px;
+}
+.header::after{
+    content: "";
+    clear: left;
+    display: table;
+}
+input{
+    width: 87%;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 7px;
+    border-radius: 3px;
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=submit]{
+    background-color: rgb(139, 207, 72);
+    color: white;
+}
+input::placeholder{
+    font-size: 10px;
+    text-indent: 5px;
+}
+form{
+    text-align: center;
+}
+.services ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 50px 180px;
+}
+.services ul p{
+    white-space: pre-line;
+}
+.services h4{
+    padding: 12px;
+}
+.icon{
+    background-color: #f3f3f3;
+    border-radius: 100%;
+    padding: 16px 22px;
+}
+.review{
+    background-color: #f7f5f5;
+}
+.review-div{
+    padding: 40px 250px;
+    text-align: center;
+}
+.review-div ul{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.review-div ul p{
+    white-space: pre-line;
+    padding: 10px;
+    color: lightslategray;
+}
+.review-div .text2{
+    font-style: italic;
+}
+.reviewImg{
+    width: 30%;
+    border-radius: 100%;
+    border: 5px solid white;
+}
+.checked{
+    color: orange;
+}
+footer{
+    background-color: rgb(53, 52, 52);
+    color: white;
+    padding: 15px 200px;
+}
+footer p{
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+    nav{
+        padding: 20px 15px;
+        font-size: 13px;
+    }
+    .header{
+        padding: 50px 20px;
+    }
+    .header-content{
+        width: 100%;
+        float: unset;
+        white-space: unset;
+    }
+    .content-div p{
+        padding: 15px 0px;
+        line-height: unset;
+        letter-spacing: 1.5px;
+    }
+    .content-div{
+        padding-left: 0px;
+        text-align: center;
+    }
+    .header-form{
+        width: 100%;
+        float: unset;
+        border-radius: 5px;
+        padding-left: 20px;
+        margin-top: 50px;
+    }
+    .form-div{
+        width: 90%;
+    }
+    .services ul{
+        padding: 50px 35px;
+        display: block;
+    }
+    .services ul li{
+        padding-bottom: 20px;
+    }
+    .review li{
+        padding-bottom: 10px;
+    }
+    .review-div{
+        padding: 28px 45px;
+        text-align: center;
+    }
+    .review-div ul{
+        padding-top: 30px;
+        display: block;
+    }
+    .review-div .text2{
+        font-size: 12px;
+    }
+    .reviewImg{
+        width: 30%;
+        border-radius: 100%;
+        border: 5px solid white;
+    }
+    footer{
+        padding: 15px;
+        text-align: center;
+    }
+}
